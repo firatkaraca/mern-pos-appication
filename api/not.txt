@@ -1,0 +1,21 @@
+node --watch server.js
+
+npm init --y
+
+npm i express
+
+npm i mongoose
+
+---------------------------------------------
+.env dosyası oluştur
+npm i dotenv
+const dotenv = require("dotenv");
+dotenv.config();
+await mongoose.connect(process.env.MONGO_URI)
+---------------------------------------------
+
+npm i cors
+----------------------
+
+güvenli parola oluşturma
+npm i bcryptjs
